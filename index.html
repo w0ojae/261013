@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="0; url=./dist/">
+    <title>초록 사이 — 나의 작은 건물</title>
+    <script>
+      const destination = new URL('./dist/', window.location.href);
+      destination.search = window.location.search;
+      destination.hash = window.location.hash;
+      window.location.replace(destination.href);
+    </script>
+  </head>
+  <body>
+    <p>풍경으로 이동하고 있어요. <a href="./dist/">사이트 열기</a></p>
+  </body>
+</html>
