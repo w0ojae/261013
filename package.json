@@ -1,0 +1,11 @@
+{
+  "name": "a-little-building-world",
+  "version": "1.6.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "check": "node --check dist/main-garden.js && node --check dist/environment-garden.js && node --check dist/first-person-dissolve.js && node --check dist/rooms-building2.js && node --check dist/window-rain.js && node --check dist/rain/simulation.js && node --check dist/rain/window-material.js && node --check dist/weather/exterior-rain.js && node --check dist/weather/wet-ground.js && node --check dist/weather/wet-materials.js && node --check dist/weather/rain-renderer.js && node --check dist/building-placement.js && node --check dist/walk-dissolve.js && node --check dist/walk-zones.js && node --check dist/glass-panes.js",
+    "test": "node scripts/test-building-placement.mjs && node scripts/test-navigation.mjs && node --test scripts/test-window-rain.mjs && node --test scripts/test-walk-dissolve.mjs && node scripts/test-outdoor-navigation.mjs && node --test scripts/test-wet-glass.mjs && node scripts/test-glass-placement.mjs"
+  }
+}
